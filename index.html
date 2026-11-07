@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: ¿Es un Árbol Binario Completo?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-btn">🌙 Modo Oscuro</button>
+    
+    <div class="container">
+        <header>
+            <h1>🌳 Quiz de Árboles Binarios</h1>
+            <p class="description">
+                Un <strong>árbol binario completo</strong> es aquel en el que todos los niveles están completamente llenos de nodos, excepto quizás el último nivel, el cual debe estar lleno de <strong>izquierda a derecha</strong> sin dejar huecos. (Además, los números siguen la estructura de un árbol de búsqueda).
+            </p>
+        </header>
+
+        <main class="game-board">
+            <div class="score-board">
+                <span class="score correct">Aciertos: <span id="score-correct">0</span></span>
+                <span class="score incorrect">Errores: <span id="score-incorrect">0</span></span>
+            </div>
+
+            <canvas id="treeCanvas" width="600" height="320"></canvas>
+
+            <div id="feedback" class="feedback hidden">¡Respuesta!</div>
+
+            <div class="controls">
+                <button id="btn-complete" class="btn action-btn">Es Completo</button>
+                <button id="btn-incomplete" class="btn action-btn">No es Completo</button>
+            </div>
+
+            <button id="btn-next" class="btn next-btn hidden">Generar otro árbol 🔄</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
